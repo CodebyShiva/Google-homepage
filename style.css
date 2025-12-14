@@ -1,0 +1,351 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IM Fell Great Primer SC", serif;
+  font-size: 16px;
+  font-style: normal;
+
+}
+
+body {
+  background-color: rgb(243, 244, 244);
+  color: #202124;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 14px;
+  height: 50px;
+  font-weight: 600;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+  margin-left: 20px;
+  color: #202124;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.navLeft a {
+  margin-right: 20px;
+}
+
+.lens-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.more-icon {
+  font-size: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.label{
+  /* display: flex; */
+  /* align-items: center; */
+  cursor: pointer;
+}
+
+/* .apps span{
+  display: flex;
+  font-size: 10px;
+} */
+
+.apps a{
+ text-align: center;
+}
+
+
+.apps{
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color:#b8dafc;
+  padding: 8px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  z-index: 1000;
+}
+
+.innerContainer2, .innerContainer1{
+  padding: 8px;
+  background-color:aliceblue;
+  border-radius: 20px;
+  width: 100%;
+  display: inline-block;
+}
+
+.innerContainer2{
+  display: none;
+}
+
+/* .card{
+  padding: 10px;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  text-align:center;
+  flex-direction:row;
+} */
+
+.innerContainer2{
+  margin-top: 10px;
+}
+
+
+#name{
+  display: none
+}
+
+#name:checked~.apps{
+  display: inline-block;
+}
+
+.apps{
+  display: none;
+}
+
+.apps a{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+  font-size: 12px;
+}
+
+[hidden]{
+  display: none !important;
+}
+
+.apps img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.image{
+  vertical-align: middle;
+}
+
+*, span {
+  box-sizing: border-box;
+}
+
+
+span{
+  font-size: 16px;
+  color: rgb(46, 44, 44)
+}
+
+
+.image{
+  overflow: clip;
+  overflow-clip-margin: content-box;
+}
+
+.bi-flask, .dots{
+  margin: 10px;
+  font-size: 20px;
+}
+
+.dots{
+  padding-bottom: 8px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 272px;
+  margin-bottom: 30px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+  padding: 12px 20px;
+  /* border: 1px solid #dfe1e5; */
+  border-radius: 24px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+input{
+  padding: 10px;
+}
+
+.searchContainer input {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.material-icons {
+  color: gray;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: black;
+  background-color: #eef4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.buttons button:hover {
+  background-color:rgb(35, 137, 220);
+  color: white;
+  /* box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); */
+}
+
+.languages {
+  font-size: 14px;
+  margin-top: 20px;
+
+}
+
+.languages a {
+  margin: 0 6px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+}
+
+
+.india{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 0px;
+    background: fit-content;
+    padding: 10px;
+    width: 100%;
+    color: rgb(7, 7, 7);
+    height: 40px;
+    font-weight:600;
+    background-color:aliceblue;
+    text-align:start;
+    padding: 10px;
+    padding-top: 15px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+footer {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  background-color:aliceblue;
+  padding: 15px 30px;
+  display: flex;
+  font-weight:600;
+  color: rgb(6, 6, 6);
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+footer a {
+  color: black;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.box{
+    width:90%;
+    border: white;
+    height: 30px;
+}
+
+.box:hover{
+    border: white;
+}
+
+@media (max-width: 700px) {
+  .searchContainer {
+    width: 90%;
+  }
+
+  header, footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navRight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
